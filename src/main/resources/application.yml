@@ -1,0 +1,12 @@
+#application.yml connect To MariaDb
+spring:
+    datasource:
+        url: jdbc:mariadb://172.10.11.26:3309/project?allowMultiQueries=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&pinGlobalTxToPhysicalConnection=true&autoReconnect=true
+        username: root
+        password: root
+        driver-class-name: org.mariadb.jdbc.Driver
+server:
+  port: 8088
+  max-http-header-size: 8192
+
+
